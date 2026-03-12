@@ -1,19 +1,31 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex flex-col bg-[#032572] overflow-hidden"
       style={{ paddingTop: '64px' }}
     >
-      {/* Background */}
+      {/* Background image */}
+      <Image
+        src="/Images/rasheed-kemy-oqY09oVTa3k-unsplash.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        priority
+        quality={75}
+        aria-hidden="true"
+      />
+      {/* Overlay */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(160deg, rgba(3,37,114,0.95) 0%, rgba(2,20,66,0.98) 60%, rgba(2,14,46,1) 100%)',
+            'linear-gradient(160deg, rgba(3,37,114,0.92) 0%, rgba(2,20,66,0.90) 60%, rgba(2,14,46,0.95) 100%)',
         }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 hero-pattern opacity-40" aria-hidden="true" />
+      <div className="absolute inset-0 hero-pattern opacity-30" aria-hidden="true" />
 
       {/* Decorative geometric lines */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">

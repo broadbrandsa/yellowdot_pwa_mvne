@@ -115,20 +115,28 @@ export default function LockScreen({ children }: { children: React.ReactNode }) 
       >
         {/* Background */}
         <div className="absolute inset-0 pointer-events-none select-none" style={{ zIndex: 0 }}>
+          <Image
+            src="/Images/rasheed-kemy-oqY09oVTa3k-unsplash.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            quality={75}
+          />
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(160deg, #0a1628 0%, #0d1f3c 50%, #0a0f1a 100%)',
+              background: 'linear-gradient(160deg, rgba(10,22,40,0.88) 0%, rgba(13,31,60,0.85) 50%, rgba(10,15,26,0.92) 100%)',
             }}
           />
           <div
-            className="absolute inset-0 hero-pattern opacity-20"
+            className="absolute inset-0 hero-pattern opacity-15"
           />
           <div
             className="absolute bottom-0 left-0 right-0"
             style={{
               height: '50%',
-              background: 'linear-gradient(to top, #0a0f1a 0%, transparent 100%)',
+              background: 'linear-gradient(to top, rgba(10,15,26,0.95) 0%, transparent 100%)',
             }}
           />
         </div>
